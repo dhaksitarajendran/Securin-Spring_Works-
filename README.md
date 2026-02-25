@@ -221,6 +221,9 @@ Create database:
 
 ```sql
 CREATE DATABASE weather_db;
+
+--- 
+
 # 🚀 REST API Endpoints
 
 | Method | Endpoint | Description | Parameters | Example |
