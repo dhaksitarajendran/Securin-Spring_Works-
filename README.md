@@ -221,3 +221,13 @@ Create database:
 
 ```sql
 CREATE DATABASE weather_db;
+# 🚀 REST API Endpoints
+
+| Method | Endpoint | Description | Parameters | Example |
+|--------|----------|------------|------------|----------|
+| POST | `/api/v1/weather/upload` | Upload and store large CSV weather data | MultipartFile (file) | `POST /api/v1/weather/upload` |
+| GET | `/api/v1/weather/by-date` | Retrieve weather data for a specific date | `date` (YYYY-MM-DD) | `/api/v1/weather/by-date?date=2015-06-21` |
+| GET | `/api/v1/weather/by-month` | Retrieve weather data for a given year and month | `year`, `month` | `/api/v1/weather/by-month?year=2015&month=6` |
+| GET | `/api/v1/weather/stats` | Compute min, max, and median temperature for a given year | `year` | `/api/v1/weather/stats?year=2015` |
+
+
